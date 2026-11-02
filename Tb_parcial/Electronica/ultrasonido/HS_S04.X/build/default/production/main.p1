@@ -1803,89 +1803,89 @@ Version 4.0 HI-TECH Software Intermediate Code
 "38635
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC18F-Q_DFP/1.30.487/xc8\pic\include\proc/pic18f47q10.h: 38635: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"7 ./header.h
+"6 ./header.h
 [p x FEXTOSC  =  ECH     ]
-"8
+"7
 [p x RSTOSC  =  EXTOSC   ]
-"11
+"10
 [p x CLKOUTEN  =  OFF    ]
-"12
+"11
 [p x CSWEN  =  ON        ]
-"13
+"12
 [p x FCMEN  =  ON        ]
-"16
+"15
 [p x MCLRE  =  EXTMCLR   ]
-"17
+"16
 [p x PWRTE  =  ON        ]
-"18
+"17
 [p x LPBOREN  =  OFF     ]
-"19
+"18
 [p x BOREN  =  OFF       ]
-"22
+"21
 [p x BORV  =  VBOR_190   ]
-"23
+"22
 [p x ZCD  =  OFF         ]
-"24
+"23
 [p x PPS1WAY  =  ON      ]
-"25
+"24
 [p x STVREN  =  ON       ]
-"26
+"25
 [p x XINST  =  OFF       ]
-"29
+"28
 [p x WDTCPS  =  WDTCPS_31 ]
-"30
+"29
 [p x WDTE  =  OFF        ]
-"33
+"32
 [p x WDTCWS  =  WDTCWS_7 ]
-"34
+"33
 [p x WDTCCS  =  SC       ]
-"37
+"36
 [p x WRT0  =  OFF        ]
-"38
+"37
 [p x WRT1  =  OFF        ]
-"39
+"38
 [p x WRT2  =  OFF        ]
-"40
+"39
 [p x WRT3  =  OFF        ]
-"41
+"40
 [p x WRT4  =  OFF        ]
-"42
+"41
 [p x WRT5  =  OFF        ]
-"43
+"42
 [p x WRT6  =  OFF        ]
-"44
+"43
 [p x WRT7  =  OFF        ]
-"47
+"46
 [p x WRTC  =  OFF        ]
-"48
+"47
 [p x WRTB  =  OFF        ]
-"49
+"48
 [p x WRTD  =  OFF        ]
-"50
+"49
 [p x SCANE  =  ON        ]
-"51
+"50
 [p x LVP  =  ON          ]
-"54
+"53
 [p x CP  =  OFF          ]
-"55
+"54
 [p x CPD  =  OFF         ]
-"60
+"59
 [p x EBTR0  =  OFF       ]
-"61
+"60
 [p x EBTR1  =  OFF       ]
-"62
+"61
 [p x EBTR2  =  OFF       ]
-"63
+"62
 [p x EBTR3  =  OFF       ]
-"64
+"63
 [p x EBTR4  =  OFF       ]
-"65
+"64
 [p x EBTR5  =  OFF       ]
-"66
+"65
 [p x EBTR6  =  OFF       ]
-"67
+"66
 [p x EBTR7  =  OFF       ]
-"70
+"69
 [p x EBTRB  =  OFF       ]
 "15 main.c
 [; ;main.c: 15: const unsigned char display_ca[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
@@ -2033,9 +2033,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _distancia_real `f ~T0 @X0 1 a ]
 [e = _distancia_real -> / * * -> _contador `d .10.0 .0.0343 * .2.0 -> -> 3 `i `d `f ]
 "94
-[; ;main.c: 94:     unsigned int distancia_entera=(unsigned int)distancia_real*5;
+[; ;main.c: 94:     unsigned int distancia_entera=(unsigned int)distancia_real;
 [v _distancia_entera `ui ~T0 @X0 1 a ]
-[e = _distancia_entera * -> _distancia_real `ui -> -> 5 `i `ui ]
+[e = _distancia_entera -> _distancia_real `ui ]
 "95
 [; ;main.c: 95:     if(distancia_entera<80){
 [e $ ! < _distancia_entera -> -> 80 `i `ui 1807  ]

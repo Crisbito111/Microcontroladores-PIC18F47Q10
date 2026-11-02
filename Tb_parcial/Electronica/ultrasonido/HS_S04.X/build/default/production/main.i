@@ -22124,7 +22124,6 @@ unsigned char __t3rd16on(void);
 
 
 
-
 #pragma config FEXTOSC = ECH
 #pragma config RSTOSC = EXTOSC
 
@@ -22273,7 +22272,7 @@ void main(void) {
 
    float distancia_real = (contador * 10.0 * 0.0343) / (2.0*3);
 
-    unsigned int distancia_entera=(unsigned int)distancia_real*5;
+    unsigned int distancia_entera=(unsigned int)distancia_real;
     if(distancia_entera<80){
     decena=distancia_entera/10;
     LATA=display_ca[decena];

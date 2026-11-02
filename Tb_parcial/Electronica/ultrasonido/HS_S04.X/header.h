@@ -1,4 +1,3 @@
-
 // PIC18F47Q10 Configuration Bit Settings
 
 // 'C' source line config statements
@@ -73,3 +72,4 @@
 // Use project enums instead of #define for ON and OFF.
 
 #include <xc.h>
+

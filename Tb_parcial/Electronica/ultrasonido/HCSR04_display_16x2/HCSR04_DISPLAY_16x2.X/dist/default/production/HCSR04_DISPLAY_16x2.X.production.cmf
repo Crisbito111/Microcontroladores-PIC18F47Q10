@@ -1,0 +1,951 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+init CODE 0 1FFFC 1FFFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 C 1 1
+$dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+cinit CODE 0 2126 2126 6 1 2
+text0 CODE 0 1982 1982 180 1 2
+text1 CODE 0 2034 2034 32 1 2
+text2 CODE 0 1D74 1D74 76 1 2
+text3 CODE 0 1FFE 1FFE 36 1 2
+text4 CODE 0 1F32 1F32 52 1 2
+text5 CODE 0 20CA 20CA 30 1 2
+text6 CODE 0 2116 2116 8 1 2
+text7 CODE 0 211E 211E 8 1 2
+text8 CODE 0 2066 2066 32 1 2
+text9 CODE 0 1F84 1F84 42 1 2
+text10 CODE 0 1FC6 1FC6 38 1 2
+text11 CODE 0 17CE 17CE 1B4 1 2
+text12 CODE 0 1C6E 1C6E 106 1 2
+text13 CODE 0 101A 101A 426 1 2
+text14 CODE 0 1440 1440 38E 1 2
+text15 CODE 0 1B02 1B02 16C 1 2
+text16 CODE 0 1ECE 1ECE 64 1 2
+text17 CODE 0 1DEA 1DEA 72 1 2
+text18 CODE 0 2098 2098 32 1 2
+text19 CODE 0 1E5C 1E5C 72 1 2
+text20 CODE 0 20FA 20FA 1C 1 2
+cstackCOMRAM COMRAM 1 1 1 4F 1 1
+smallconst SMALLCONST 0 1000 1000 1A 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-FFF 1
+CONST 212C-1FFFB 1
+IDLOC 200000-2000FF 1
+SMALLCONST 212C-FFFF 1
+SMALLCONST 11000-1FFFB 1
+CODE 4-FFF 1
+CODE 212C-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 50-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 50-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 212C-FFFF 1
+MEDIUMCONST 11000-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+20FA text20 CODE >126:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20FC text20 CODE >128:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2100 text20 CODE >129:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2104 text20 CODE >130:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2108 text20 CODE >131:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+210A text20 CODE >132:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2112 text20 CODE >133:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2114 text20 CODE >134:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E5C text19 CODE >152:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E5C text19 CODE >155:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E60 text19 CODE >156:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E62 text19 CODE >157:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E64 text19 CODE >158:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E66 text19 CODE >159:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E6E text19 CODE >160:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E72 text19 CODE >161:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E74 text19 CODE >162:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E7C text19 CODE >163:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E7E text19 CODE >164:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E86 text19 CODE >165:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E88 text19 CODE >166:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E8E text19 CODE >167:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E92 text19 CODE >169:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E94 text19 CODE >170:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1E9C text19 CODE >171:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EA0 text19 CODE >172:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EA2 text19 CODE >173:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EAA text19 CODE >174:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EAC text19 CODE >175:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EB4 text19 CODE >176:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1EBA text19 CODE >167:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1ECC text19 CODE >179:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2098 text18 CODE >88:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+209A text18 CODE >91:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+209C text18 CODE >92:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20A0 text18 CODE >93:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20A2 text18 CODE >94:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20AA text18 CODE >95:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20AC text18 CODE >96:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20AE text18 CODE >97:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20B0 text18 CODE >98:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20B6 text18 CODE >99:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20BC text18 CODE >100:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20C2 text18 CODE >101:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20C8 text18 CODE >102:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DEA text17 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1DEA text17 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1DF0 text17 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E02 text17 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E06 text17 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E0A text17 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E10 text17 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E12 text17 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E20 text17 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E26 text17 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E3C text17 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E44 text17 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E46 text17 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E4C text17 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E52 text17 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E52 text17 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E5A text17 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1ECE text16 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1ECE text16 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EE0 text16 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EE4 text16 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EE8 text16 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EEE text16 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EF0 text16 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1EFE text16 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F14 text16 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F1C text16 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F22 text16 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F28 text16 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F28 text16 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1F30 text16 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B02 text15 CODE >224:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1B02 text15 CODE >226:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1B1A text15 CODE >227:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1B46 text15 CODE >228:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1B70 text15 CODE >229:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1B98 text15 CODE >230:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BAE text15 CODE >231:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BB2 text15 CODE >233:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BBA text15 CODE >234:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BBE text15 CODE >236:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BC6 text15 CODE >237:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BCE text15 CODE >238:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BD2 text15 CODE >240:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BDA text15 CODE >241:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BE2 text15 CODE >242:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BEA text15 CODE >243:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BEE text15 CODE >245:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BF6 text15 CODE >246:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1BFE text15 CODE >247:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C06 text15 CODE >248:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C0E text15 CODE >249:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C12 text15 CODE >251:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C1A text15 CODE >252:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C22 text15 CODE >253:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C2A text15 CODE >254:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C32 text15 CODE >255:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C3A text15 CODE >256:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C3E text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C42 text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C4A text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C52 text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C5A text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C62 text15 CODE >257:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1C6C text15 CODE >258:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1440 text14 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1440 text14 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1446 text14 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+144C text14 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+145A text14 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+145C text14 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+146C text14 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+147C text14 CODE >37:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+148C text14 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+148E text14 CODE >42:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1490 text14 CODE >43:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1494 text14 CODE >46:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14A4 text14 CODE >49:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14AA text14 CODE >50:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14B0 text14 CODE >51:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14BE text14 CODE >52:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14C0 text14 CODE >56:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14D0 text14 CODE >58:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14E0 text14 CODE >60:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14F0 text14 CODE >63:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14F2 text14 CODE >65:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14F4 text14 CODE >66:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+14F8 text14 CODE >69:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1508 text14 CODE >75:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+151E text14 CODE >76:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+152E text14 CODE >77:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1536 text14 CODE >78:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+153A text14 CODE >79:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+154E text14 CODE >83:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+155E text14 CODE >84:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+155E text14 CODE >85:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1572 text14 CODE >89:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+158C text14 CODE >92:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+159C text14 CODE >93:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15AC text14 CODE >94:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15BC text14 CODE >96:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15BE text14 CODE >97:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15C2 text14 CODE >100:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15D2 text14 CODE >101:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15DC text14 CODE >102:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15E6 text14 CODE >103:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15F4 text14 CODE >104:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15F6 text14 CODE >105:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+15F6 text14 CODE >106:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1600 text14 CODE >112:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+161E text14 CODE >115:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1620 text14 CODE >116:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1630 text14 CODE >118:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1632 text14 CODE >97:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1632 text14 CODE >119:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1642 text14 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1658 text14 CODE >123:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+165E text14 CODE >128:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1668 text14 CODE >129:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1676 text14 CODE >130:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1678 text14 CODE >131:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1678 text14 CODE >132:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1682 text14 CODE >133:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1688 text14 CODE >127:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1696 text14 CODE >139:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1698 text14 CODE >140:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16A6 text14 CODE >141:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16D4 text14 CODE >142:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16D8 text14 CODE >143:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16DC text14 CODE >144:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16DC text14 CODE >145:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16EE text14 CODE >149:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16EE text14 CODE >150:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+16FE text14 CODE >151:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+170A text14 CODE >152:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1718 text14 CODE >153:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1742 text14 CODE >154:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1746 text14 CODE >159:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1760 text14 CODE >160:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1766 text14 CODE >161:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1776 text14 CODE >165:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1790 text14 CODE >166:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+1796 text14 CODE >167:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17A6 text14 CODE >169:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17A8 text14 CODE >173:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17AC text14 CODE >175:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17BA text14 CODE >176:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17BC text14 CODE >177:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17C0 text14 CODE >180:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17C2 text14 CODE >182:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+17CC text14 CODE >185:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+101A text13 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+101A text13 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1020 text13 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1026 text13 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1034 text13 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1036 text13 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1046 text13 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1056 text13 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1066 text13 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1068 text13 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+106C text13 CODE >36:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+107C text13 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1082 text13 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1088 text13 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1096 text13 CODE >42:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1098 text13 CODE >45:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10A8 text13 CODE >48:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10B8 text13 CODE >50:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10C8 text13 CODE >53:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10CA text13 CODE >54:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10CE text13 CODE >57:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10DE text13 CODE >58:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10DE text13 CODE >65:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+10FE text13 CODE >66:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1112 text13 CODE >95:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+111E text13 CODE >96:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1128 text13 CODE >97:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1132 text13 CODE >98:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+113E text13 CODE >99:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+114A text13 CODE >100:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1156 text13 CODE >101:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1162 text13 CODE >102:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+116E text13 CODE >103:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+117A text13 CODE >104:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1188 text13 CODE >105:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1194 text13 CODE >106:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11A4 text13 CODE >107:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11B0 text13 CODE >108:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11C0 text13 CODE >109:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11CE text13 CODE >110:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11DA text13 CODE >111:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11EA text13 CODE >112:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+11F6 text13 CODE >113:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1206 text13 CODE >114:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1212 text13 CODE >115:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1222 text13 CODE >116:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+122E text13 CODE >117:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1258 text13 CODE >145:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+128E text13 CODE >146:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+129C text13 CODE >149:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12B6 text13 CODE >152:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12BA text13 CODE >153:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12C4 text13 CODE >154:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12D2 text13 CODE >155:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12D4 text13 CODE >156:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12D4 text13 CODE >157:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12DE text13 CODE >158:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12E4 text13 CODE >152:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12F2 text13 CODE >163:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+12F4 text13 CODE >164:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1302 text13 CODE >165:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1330 text13 CODE >166:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1334 text13 CODE >167:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1338 text13 CODE >168:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1338 text13 CODE >169:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+134A text13 CODE >173:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+134A text13 CODE >174:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+135A text13 CODE >175:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1366 text13 CODE >176:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1374 text13 CODE >177:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+139E text13 CODE >178:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13A2 text13 CODE >183:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13BC text13 CODE >184:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13CC text13 CODE >185:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13D0 text13 CODE >187:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13EA text13 CODE >188:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13FA text13 CODE >190:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+13FC text13 CODE >191:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1400 text13 CODE >192:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1400 text13 CODE >194:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1404 text13 CODE >195:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1414 text13 CODE >196:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1422 text13 CODE >197:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1424 text13 CODE >199:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+142A text13 CODE >201:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+142E text13 CODE >203:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+143E text13 CODE >205:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+1C6E text12 CODE >43:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1C6E text12 CODE >47:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1C84 text12 CODE >48:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1C98 text12 CODE >49:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CC2 text12 CODE >50:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CC4 text12 CODE >51:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CD4 text12 CODE >52:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CD8 text12 CODE >53:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CE6 text12 CODE >54:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1CFE text12 CODE >57:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D12 text12 CODE >60:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D26 text12 CODE >63:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D30 text12 CODE >64:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D32 text12 CODE >62:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D42 text12 CODE >67:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D52 text12 CODE >68:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D62 text12 CODE >69:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+1D72 text12 CODE >70:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+17CE text11 CODE >10:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+17D0 text11 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+17EE text11 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1820 text11 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1824 text11 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1824 text11 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1834 text11 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+184A text11 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+185E text11 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1862 text11 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1866 text11 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1868 text11 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1872 text11 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18A4 text11 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18A6 text11 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18B2 text11 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18BC text11 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18BC text11 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18EE text11 CODE >34:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18F0 text11 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+18FA text11 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1918 text11 CODE >37:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1926 text11 CODE >38:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1928 text11 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+192C text11 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1950 text11 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+196E text11 CODE >42:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1970 text11 CODE >43:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1980 text11 CODE >44:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+1FC6 text10 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FC6 text10 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FCA text10 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FCE text10 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FD0 text10 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FF0 text10 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1FFC text10 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1F84 text9 CODE >77:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F84 text9 CODE >80:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F90 text9 CODE >81:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F90 text9 CODE >82:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F96 text9 CODE >84:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1FB0 text9 CODE >85:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1FC4 text9 CODE >86:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2066 text8 CODE >136:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2068 text8 CODE >139:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+206A text8 CODE >140:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+206E text8 CODE >141:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2070 text8 CODE >142:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2078 text8 CODE >143:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+207A text8 CODE >144:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+207C text8 CODE >145:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+207E text8 CODE >146:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2084 text8 CODE >147:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+208A text8 CODE >148:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2090 text8 CODE >149:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2096 text8 CODE >150:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+211E text7 CODE >104:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+211E text7 CODE >106:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2124 text7 CODE >107:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2116 text6 CODE >37:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2116 text6 CODE >39:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+211C text6 CODE >40:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20CA text5 CODE >62:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20CC text5 CODE >64:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20E2 text5 CODE >65:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+20F8 text5 CODE >66:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F32 text4 CODE >109:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F32 text4 CODE >111:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F34 text4 CODE >112:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F36 text4 CODE >113:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F3C text4 CODE >114:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F4A text4 CODE >115:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F50 text4 CODE >116:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F58 text4 CODE >117:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F5E text4 CODE >118:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F64 text4 CODE >119:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F6A text4 CODE >120:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F70 text4 CODE >121:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F76 text4 CODE >122:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F7C text4 CODE >123:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1F82 text4 CODE >124:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1FFE text3 CODE >192:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1FFE text3 CODE >193:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2000 text3 CODE >194:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2004 text3 CODE >195:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2012 text3 CODE >196:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2016 text3 CODE >197:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2024 text3 CODE >198:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2028 text3 CODE >199:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+202C text3 CODE >200:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2032 text3 CODE >201:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1D74 text2 CODE >5:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1D76 text2 CODE >7:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1D86 text2 CODE >9:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1D8E text2 CODE >10:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1D92 text2 CODE >11:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DA4 text2 CODE >13:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DAC text2 CODE >14:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DB0 text2 CODE >15:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DC2 text2 CODE >17:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DCA text2 CODE >18:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DCE text2 CODE >19:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DE0 text2 CODE >21:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+1DE8 text2 CODE >23:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\LCD.c
+2034 text1 CODE >6:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2034 text1 CODE >8:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+203A text1 CODE >9:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+203E text1 CODE >10:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2042 text1 CODE >13:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2044 text1 CODE >14:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2048 text1 CODE >15:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+204A text1 CODE >18:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+204C text1 CODE >19:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+204E text1 CODE >22:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2052 text1 CODE >25:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+205C text1 CODE >26:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2064 text1 CODE >27:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1982 text0 CODE >29:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1982 text0 CODE >30:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1986 text0 CODE >34:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1988 text0 CODE >35:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1990 text0 CODE >36:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1992 text0 CODE >38:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1998 text0 CODE >39:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+199E text0 CODE >42:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19A2 text0 CODE >43:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19A6 text0 CODE >44:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19AE text0 CODE >45:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19C8 text0 CODE >42:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19C8 text0 CODE >46:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19DA text0 CODE >50:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19DE text0 CODE >51:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+19E6 text0 CODE >52:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1A00 text0 CODE >49:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1A00 text0 CODE >53:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1A0E text0 CODE >57:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1AAC text0 CODE >58:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1AC8 text0 CODE >61:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1AD2 text0 CODE >62:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1AE2 text0 CODE >63:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+1AEA text0 CODE >66:D:\CURSOS MECA\Ciclo_5\Microcontroladores\Tb_parcial\Electronica\ultrasonido\HCSR04_display_16x2\HCSR04_DISPLAY_16x2.X\main00.c
+2126 cinit CODE >2522:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+2126 cinit CODE >2524:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+2126 cinit CODE >2527:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+2126 cinit CODE >2533:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+2126 cinit CODE >2535:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+2128 cinit CODE >2536:C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hspace_0 20000 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hspace_1 50 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hspace_4 60000C 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ENVIA_CHAR@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__mediumconst 1000 0 SMALLCONST 0 smallconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ENVIA_LCD_CMD 2066 0 CODE 0 text8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LCD_ESCRIBE_VAR_INT 1B02 0 CODE 0 text15 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LCD_CONFIG 1F32 0 CODE 0 text4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LATD F85 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+_main 1982 0 CODE 0 text0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ENVIA_NIBBLE@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__end_of_ENVIA_CHAR 20CA 0 CODE 0 text18 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+start 1FFFC 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___flmul@aexp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@bexp 21 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@prod 22 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@sign 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@temp 26 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@decena 13 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+main@contador 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LCD_INIT 1FFE 0 CODE 0 text3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__end_of_LCD_INIT 2034 0 CODE 0 text3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@millar 11 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@n_digitos F 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_configuro 2066 0 CODE 0 text1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@numero D 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_LCD_CONFIG 1F84 0 CODE 0 text4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ANSELD F21 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_CURSOR_HOME 2116 0 CODE 0 text6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_configuro 2034 0 CODE 0 text1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@unidad 14 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@aexp 40 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@bexp 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@sign 38 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_LCD_ESCRIBE_VAR_INT 1C6E 0 CODE 0 text15 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___fldiv 17CE 0 CODE 0 text14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___flmul 1440 0 CODE 0 text13 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___fltol 1D74 0 CODE 0 text12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___lwdiv 1E5C 0 CODE 0 text17 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___lwmod 1F32 0 CODE 0 text16 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwdiv@quotient A 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@a 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@b 28 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@b F 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_ENVIA_LCD_CMD 2098 0 CODE 0 text8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+start_initialization 2126 0 CODE 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ESCRIBE_MENSAJE2 1F84 0 CODE 0 text9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_OSCFRQ ED9 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_TRISBbits F88 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+main@distancia_entera 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_BORRAR_LCD 211E 0 CODE 0 text7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LEER_LCD@aux 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@centena 12 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_strlen 1FFE 0 CODE 0 text10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hidloc 0 0 ABS 0 idloc dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_main$1126 46 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwdiv@counter C 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_POS_CURSOR 1D74 0 CODE 0 text2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__smallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hconfig 30000C 0 CONFIG 4 config dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lidloc 0 0 ABS 0 idloc dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul@grs 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_PORTBbits F8D 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hinit 20000 0 CODE 0 init dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Linit 1FFFC 0 CODE 0 init dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_BORRAR_LCD 2126 0 CODE 0 text7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+POS_CURSOR@fila 5 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_CURSOR_ONOFF 20CA 0 CODE 0 text5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__S0 20000 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__S1 50 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_ESCRIBE_MENSAJE2 1FC6 0 CODE 0 text9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___xxtofl 17CE 0 CODE 0 text11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_POS_CURSOR 1DEA 0 CODE 0 text2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+main@distancia_real 42 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ENVIA_NIBBLE 20FA 0 CODE 0 text20 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of___xxtofl 1982 0 CODE 0 text11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_CURSOR_HOME 211E 0 CODE 0 text6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext10 1FC6 0 CODE 0 text10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext11 17CE 0 CODE 0 text11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext12 1C6E 0 CODE 0 text12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext13 101A 0 CODE 0 text13 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext14 1440 0 CODE 0 text14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext15 1B02 0 CODE 0 text15 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext16 1ECE 0 CODE 0 text16 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext17 1DEA 0 CODE 0 text17 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext18 2098 0 CODE 0 text18 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext19 1E5C 0 CODE 0 text19 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext20 20FA 0 CODE 0 text20 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv 1440 0 CODE 0 text14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___flmul 101A 0 CODE 0 text13 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fltol 1C6E 0 CODE 0 text12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwdiv 1DEA 0 CODE 0 text17 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwmod 1ECE 0 CODE 0 text16 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LATBbits F83 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LATDbits F85 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@grs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fldiv@rem 34 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_CURSOR_ONOFF 20FA 0 CODE 0 text5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___lwdiv@divisor 8 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_strlen 1FC6 0 CODE 0 text10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___fldiv@new_exp 39 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_OSCCON1 ED3 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_LEER_LCD 1E5C 0 CODE 0 text19 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fltol@exp1 A 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+main@espera 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_ENVIA_NIBBLE 2116 0 CODE 0 text20 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+end_of_initialization 2126 0 CODE 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_LEER_LCD 1ECE 0 CODE 0 text19 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ESCRIBE_MENSAJE2@cadena 4 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___lwdiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___fldiv 28 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___flmul F 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___fltol 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___lwdiv 6 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___lwmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+LCD_ESCRIBE_VAR_INT@d_millar 10 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__pcinit 2126 0 CODE 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext0 1982 0 CODE 0 text0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext1 2034 0 CODE 0 text1 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext2 1D74 0 CODE 0 text2 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext3 1FFE 0 CODE 0 text3 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext4 1F32 0 CODE 0 text4 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext5 20CA 0 CODE 0 text5 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext6 2116 0 CODE 0 text6 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext7 211E 0 CODE 0 text7 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext8 2066 0 CODE 0 text8 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ptext9 1F84 0 CODE 0 text9 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ENVIA_LCD_CMD@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___fltol@sign1 9 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___fltol@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\xcAspgk.0\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of__initialization 2126 0 CODE 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+POS_CURSOR@columna 4 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ESCRIBE_MENSAJE2@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ENVIA_CHAR@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__end_of_main 1B02 0 CODE 0 text0 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ESCRIBE_MENSAJE2@tam 6 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_OSCEN ED7 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_PORTD F8F 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_TRISD F8A 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ENVIA_CHAR 2098 0 CODE 0 text18 dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__initialization 2126 0 CODE 0 cinit dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+ENVIA_LCD_CMD@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hsmallconst 101A 0 SMALLCONST 0 smallconst dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+_ANSELBbits F14 0 ABS 0 - dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+__Hintcode 8 0 CODE 0 intcode dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+CURSOR_ONOFF@estado 4 0 COMRAM 1 cstackCOMRAM dist/default/production\HCSR04_DISPLAY_16x2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text13 0 101A 101A 1112 1
+cstackCOMRAM 1 1 1 4F 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 1000 1000 1A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

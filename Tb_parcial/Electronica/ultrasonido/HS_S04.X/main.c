@@ -91,7 +91,7 @@ void main(void) {
    // Calculamos la distancia en coma flotante (centímetros)
    float distancia_real = (contador * 10.0 * 0.0343) / (2.0*3);// 0.0343cm/us la velocidad del sonido
     
-    unsigned int distancia_entera=(unsigned int)distancia_real*5; // hacemos un casting de datos
+    unsigned int distancia_entera=(unsigned int)distancia_real; // hacemos un casting de datos
     if(distancia_entera<80){
     decena=distancia_entera/10;
     LATA=display_ca[decena];

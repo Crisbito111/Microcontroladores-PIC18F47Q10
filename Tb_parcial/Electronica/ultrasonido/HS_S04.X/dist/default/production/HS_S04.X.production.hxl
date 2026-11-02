@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o
+ C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o
  -Odist/default/production\HS_S04.X.production.hex
  -logfile=dist/default/production\HS_S04.X.production.hxl
  -addressing=1
@@ -9,19 +9,19 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o)
-  1000h - 1D7Bh		(C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o)
-  1FFFCh - 1FFFFh		(C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o)
-  300000h - 30000Bh		(C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o)
+  0h - 3h		(C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o)
+  1000h - 1D69h		(C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o)
+  1FFFCh - 1FFFFh		(C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o)
+  300000h - 30000Bh		(C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o)
  Unused ranges:
   4h - FFFh
-  1D7Ch - 1FFFBh
+  1D6Ah - 1FFFBh
   20000h - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\Lenovo\AppData\Local\Temp\xcAsppc.0\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\Lenovo\AppData\Local\Temp\xcAsm5o.0\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -241,8 +241,7 @@
 00001D30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001D40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001D50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001D60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001D70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
+00001D60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
 0001FFF0 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
 ----------------------------------------------------------
